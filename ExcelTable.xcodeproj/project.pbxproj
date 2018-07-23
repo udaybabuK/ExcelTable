@@ -15,6 +15,9 @@
 		F8EB551E2105B54B00F78ED3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8EB551C2105B54B00F78ED3 /* LaunchScreen.storyboard */; };
 		F8EB55292105B54B00F78ED3 /* ExcelTableTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F8EB55282105B54B00F78ED3 /* ExcelTableTests.m */; };
 		F8EB55342105B54B00F78ED3 /* ExcelTableUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F8EB55332105B54B00F78ED3 /* ExcelTableUITests.m */; };
+		F8EB55492105B99200F78ED3 /* UIView+XCMultiSortTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = F8EB55432105B99200F78ED3 /* UIView+XCMultiSortTableView.m */; };
+		F8EB554A2105B99200F78ED3 /* XCMultiSortTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = F8EB55452105B99200F78ED3 /* XCMultiSortTableView.m */; };
+		F8EB554B2105B99200F78ED3 /* XCMultiSortTableViewBGScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = F8EB55472105B99200F78ED3 /* XCMultiSortTableViewBGScrollView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,13 @@
 		F8EB552F2105B54B00F78ED3 /* ExcelTableUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExcelTableUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8EB55332105B54B00F78ED3 /* ExcelTableUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExcelTableUITests.m; sourceTree = "<group>"; };
 		F8EB55352105B54B00F78ED3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F8EB55422105B99200F78ED3 /* UIView+XCMultiSortTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+XCMultiSortTableView.h"; sourceTree = "<group>"; };
+		F8EB55432105B99200F78ED3 /* UIView+XCMultiSortTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+XCMultiSortTableView.m"; sourceTree = "<group>"; };
+		F8EB55442105B99200F78ED3 /* XCMultiSortTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCMultiSortTableView.h; sourceTree = "<group>"; };
+		F8EB55452105B99200F78ED3 /* XCMultiSortTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCMultiSortTableView.m; sourceTree = "<group>"; };
+		F8EB55462105B99200F78ED3 /* XCMultiSortTableViewBGScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCMultiSortTableViewBGScrollView.h; sourceTree = "<group>"; };
+		F8EB55472105B99200F78ED3 /* XCMultiSortTableViewBGScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCMultiSortTableViewBGScrollView.m; sourceTree = "<group>"; };
+		F8EB55482105B99200F78ED3 /* XCMultiSortTableViewDefault.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCMultiSortTableViewDefault.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +111,7 @@
 		F8EB550D2105B54B00F78ED3 /* ExcelTable */ = {
 			isa = PBXGroup;
 			children = (
+				F8EB55412105B97700F78ED3 /* XCMultiSortTableView */,
 				F8EB55112105B54B00F78ED3 /* AppDelegate.h */,
 				F8EB55122105B54B00F78ED3 /* AppDelegate.m */,
 				F8EB55142105B54B00F78ED3 /* ViewController.h */,
@@ -138,6 +149,20 @@
 				F8EB55352105B54B00F78ED3 /* Info.plist */,
 			);
 			path = ExcelTableUITests;
+			sourceTree = "<group>";
+		};
+		F8EB55412105B97700F78ED3 /* XCMultiSortTableView */ = {
+			isa = PBXGroup;
+			children = (
+				F8EB55422105B99200F78ED3 /* UIView+XCMultiSortTableView.h */,
+				F8EB55432105B99200F78ED3 /* UIView+XCMultiSortTableView.m */,
+				F8EB55442105B99200F78ED3 /* XCMultiSortTableView.h */,
+				F8EB55452105B99200F78ED3 /* XCMultiSortTableView.m */,
+				F8EB55462105B99200F78ED3 /* XCMultiSortTableViewBGScrollView.h */,
+				F8EB55472105B99200F78ED3 /* XCMultiSortTableViewBGScrollView.m */,
+				F8EB55482105B99200F78ED3 /* XCMultiSortTableViewDefault.h */,
+			);
+			name = XCMultiSortTableView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,7 +298,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8EB554A2105B99200F78ED3 /* XCMultiSortTableView.m in Sources */,
+				F8EB554B2105B99200F78ED3 /* XCMultiSortTableViewBGScrollView.m in Sources */,
 				F8EB55162105B54B00F78ED3 /* ViewController.m in Sources */,
+				F8EB55492105B99200F78ED3 /* UIView+XCMultiSortTableView.m in Sources */,
 				F8EB55132105B54B00F78ED3 /* AppDelegate.m in Sources */,
 				F8EB55102105B54B00F78ED3 /* main.m in Sources */,
 			);
@@ -507,6 +535,7 @@
 				F8EB553A2105B54B00F78ED3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F8EB553B2105B54B00F78ED3 /* Build configuration list for PBXNativeTarget "ExcelTableTests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +544,7 @@
 				F8EB553D2105B54B00F78ED3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F8EB553E2105B54B00F78ED3 /* Build configuration list for PBXNativeTarget "ExcelTableUITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +553,7 @@
 				F8EB55402105B54B00F78ED3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
